@@ -22,10 +22,21 @@ go to sillytavern --> connection-profile --> chat completion --> custom
 in custom endpoint put http://127.0.0.1:5000/v1
 make sure to turn off streaming in settings.
 
-# empty assistant for all models in huggingface:
-[CohereForAI/c4ai-command-r-plus-08-2024](https://hf.co/chat/assistant/67f8ce415d57162186feb0ce) ID:67f8ce415d57162186feb0ce
+# model list with id
+note: put id in .env for using 
+| Model ID | Model Name                                               |
+|----------|-----------------------------------------------------------|
+| 0        | meta-llama/Llama-3.3-70B-Instruct                         |
+| 1        | Qwen/Qwen2.5-72B-Instruct                                 |
+| 2        | CohereForAI/c4ai-command-r-plus-08-2024                   |
+| 3        | deepseek-ai/DeepSeek-R1-Distill-Qwen-32B                  |
+| 4        | nvidia/Llama-3.1-Nemotron-70B-Instruct-HF                 |
+| 5        | Qwen/QwQ-32B                                              |
+| 6        | Qwen/Qwen2.5-Coder-32B-Instruct                           |
+| 7        | google/gemma-3-27b-it                                     |
+| 8        | meta-llama/Llama-3.2-11B-Vision-Instruct                  |
+| 9        | NousResearch/Hermes-3-Llama-3.1-8B                        |
+| 10       | mistralai/Mistral-Nemo-Instruct-2407                      |
+| 11       | microsoft/Phi-3.5-mini-instruct                           |
 
-[Qwen/Qwen2.5-72B-Instruct](https://hf.co/chat/assistant/67f91e88dee96a55e102d41c) ID: 67f91e88dee96a55e102d41c
-
-[deepseek-ai/DeepSeek-R1-Distill-Qwen-32B](https://hf.co/chat/assistant/67f91f0dcf41ef9da7280a75) ID: 67f91f0dcf41ef9da7280a75
 
