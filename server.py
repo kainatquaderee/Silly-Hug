@@ -56,7 +56,7 @@ def get_hugchat_response(prompt, email, passwd):
     else:
         print("Invalid MODELID")
 
-    chatbot.new_conversation(assistant=ASSISTENT, switch_to=True)
+    chatbot.new_conversation(switch_to=True)
 
     # Get the response from the chatbot
     message_result = chatbot.chat(prompt)
