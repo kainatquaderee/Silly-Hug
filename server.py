@@ -29,32 +29,33 @@ def get_hugchat_response(prompt, email, passwd):
 
     # Create chatbot
     chatbot = hugchat.ChatBot(cookies=cookies.get_dict())
-    if MODELID == 0:
+    if MODELID == "0":
         chatbot.switch_llm(0)
-    elif MODELID == 1:
+    elif MODELID == "1":
         chatbot.switch_llm(1)
-    elif MODELID == 2:
+    elif MODELID == "2":
         chatbot.switch_llm(2)
-    elif MODELID == 3:
+    elif MODELID == "3":
         chatbot.switch_llm(3)
-    elif MODELID == 4:
+    elif MODELID == "4":
         chatbot.switch_llm(4)
-    elif MODELID == 5:
+    elif MODELID == "5":
         chatbot.switch_llm(5)
-    elif MODELID == 6:
+    elif MODELID == "6":
         chatbot.switch_llm(6)
-    elif MODELID == 7:
+    elif MODELID == "7":
         chatbot.switch_llm(7)
-    elif MODELID == 8:
+    elif MODELID == "8":
         chatbot.switch_llm(8)
-    elif MODELID == 9:
+    elif MODELID == "9":
         chatbot.switch_llm(9)
-    elif MODELID == 10:
+    elif MODELID == "10":
         chatbot.switch_llm(10)
-    elif MODELID == 11:
+    elif MODELID == "11":
         chatbot.switch_llm(11)
     else:
         print("Invalid MODELID")
+
 
     chatbot.new_conversation(switch_to=True)
 
