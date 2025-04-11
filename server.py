@@ -21,7 +21,7 @@ load_dotenv()
 hf_email = os.getenv("EMAIL")
 hf_passwd = os.getenv("PASS")
 MODELID= os.getenv("MODELID")
-
+DC=os.getenv("DELETE_ALL_CONVERSATIONS")
 def get_hugchat_response(prompt, email, passwd):
     # Hugging Face Login
     sign = Login(email, passwd)
@@ -67,7 +67,8 @@ def get_hugchat_response(prompt, email, passwd):
         return message_result['text']
 
     # If not, just return the message_result directly (or handle it as needed)
-    chatbot.delete_all_conversations()
+    if(DC==1):
+        chatbot.delete_all_conversations()
     return str(message_result)  # Convert any non-serializable object to string
 
 @app.route('/v1/chat/completions', methods=['POST'])
