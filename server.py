@@ -30,7 +30,7 @@ def get_hugchat_response(prompt, email, passwd):
     # Create chatbot
     chatbot = hugchat.ChatBot(cookies=cookies.get_dict())
     if MODELID == 0:
-    chatbot.switch_llm(0)
+        chatbot.switch_llm(0)
     elif MODELID == 1:
         chatbot.switch_llm(1)
     elif MODELID == 2:
