@@ -67,6 +67,7 @@ def get_hugchat_response(prompt, email, passwd):
         return message_result['text']
 
     # If not, just return the message_result directly (or handle it as needed)
+    chatbot.delete_all_conversations()
     return str(message_result)  # Convert any non-serializable object to string
 
 @app.route('/v1/chat/completions', methods=['POST'])
