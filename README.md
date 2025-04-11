@@ -1,4 +1,4 @@
-# silly-Hug (Silly-hug🤓🤗)
+# silly-Hug (Silly-hug😇🤗)
 Huggingface models for sillytavern
 
 ### get started:
