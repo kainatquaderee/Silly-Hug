@@ -20,7 +20,7 @@ load_dotenv()
 
 hf_email = os.getenv("EMAIL")
 hf_passwd = os.getenv("PASS")
-ASSISTENT= os.getenv("ASSISTENTID")
+MODELID= os.getenv("MODELID")
 
 def get_hugchat_response(prompt, email, passwd):
     # Hugging Face Login
@@ -29,6 +29,7 @@ def get_hugchat_response(prompt, email, passwd):
 
     # Create chatbot
     chatbot = hugchat.ChatBot(cookies=cookies.get_dict())
+    chatbot.switch_llm(MODELID)
     chatbot.new_conversation(assistant=ASSISTENT, switch_to=True)
 
     # Get the response from the chatbot
