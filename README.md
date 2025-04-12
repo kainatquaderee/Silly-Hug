@@ -14,7 +14,7 @@ git clone https://github.com/kainatquaderee/Silly-Hug.git
 
 
 Fill all .env parameters
-email password and assistentId (empty assisten provided bellow(or any you want)
+email password and modelid provided bellow
 `python server.py`
 # sillytavern:
 go to sillytavern --> connection-profile --> chat completion --> custom
