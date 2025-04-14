@@ -21,6 +21,7 @@ email password and modelid provided bellow
 go to sillytavern --> connection-profile --> chat completion --> custom
 
 in custom endpoint put http://127.0.0.1:5000/v1
+
 **make sure to turn off streaming in settings.**
 
 # model list with id
